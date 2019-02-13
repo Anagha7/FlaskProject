@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Welcome To Flask {{name}}</h1>
+<ul>
+     {% for nam in name %}
+        {% if nam[-1]=="a" %}
+            <li>{{ nam }}</li>
+        {% endif %}
+
+    {% endfor %}
+
+
+</ul>
+{% endblock %}

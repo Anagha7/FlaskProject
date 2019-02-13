@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p>
+    {{ sstatus }}
+    <form action="" method="post" >
+        <p>
+            {{ form.chatwin.label }}<br>
+        </p>
+        <p>
+            {{ form.chatwin(size=100) }}<br>
+        </p>
+        <p>
+            {{ form.msg(size=50) }}
+            {{ form.submit}}
+        </p>
+    </form>
+{% endblock %}
